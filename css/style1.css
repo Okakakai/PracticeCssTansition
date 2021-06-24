@@ -1,0 +1,15 @@
+.box {
+    width: 100px;
+    height: 100px;
+    background: #000;
+    /* transition: all 300ms 0s ease; */
+    /* これはまとめて選択できるものすべて分けてみる */
+    transition-property: all;
+    transition-duration: 300ms;
+    transition-delay: 0s;
+    transition-timing-function: ease;
+}
+.box:hover{
+    background: #ccc;
+    width: 300px;
+}
