@@ -1,0 +1,29 @@
+.box {
+    width: 100px;
+    height: 100px;
+    background: #000;
+    /* animation: rotation 2s ease 0s 1 alternate none running; */
+    animation-name: rotation;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    /* 回数infiniteで無限 */
+    animation-direction: alternate;
+    animation-fill-mode: none;
+    animation-play-state: running;
+}
+
+@keyframes rotation {
+    0% {
+        transfrom: scale(.3);
+    }
+    50% {
+        transform: scale(.6) rotate( -45deg);
+        background: red;
+    }
+    100% {
+        transfrom: scale(1) rotate(180deg);
+        background: blue;
+    }
+}
